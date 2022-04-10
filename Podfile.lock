@@ -1,0 +1,26 @@
+PODS:
+  - Bagel (1.4.0):
+    - CocoaAsyncSocket
+  - CocoaAsyncSocket (7.6.5)
+  - SDWebImage (5.12.5):
+    - SDWebImage/Core (= 5.12.5)
+  - SDWebImage/Core (5.12.5)
+
+DEPENDENCIES:
+  - Bagel
+  - SDWebImage (~> 5.12)
+
+SPEC REPOS:
+  trunk:
+    - Bagel
+    - CocoaAsyncSocket
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Bagel: c3fa6bcbd52db9ca976edbafd7638f0553ded101
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
+
+PODFILE CHECKSUM: bd0e766b03a0e2b222d927f77a3322269eae4d9b
+
+COCOAPODS: 1.11.3

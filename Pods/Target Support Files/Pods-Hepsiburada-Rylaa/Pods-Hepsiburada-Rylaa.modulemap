@@ -1,0 +1,6 @@
+framework module Pods_Hepsiburada_Rylaa {
+  umbrella header "Pods-Hepsiburada-Rylaa-umbrella.h"
+
+  export *
+  module * { export * }
+}

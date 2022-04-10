@@ -1,0 +1,6 @@
+framework module Pods_Hepsiburada_RylaaTests {
+  umbrella header "Pods-Hepsiburada-RylaaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

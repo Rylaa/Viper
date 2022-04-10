@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="g9l-VW-vYq">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="7EU-zs-kdH" customClass="HomeViewController" customModule="Hepsiburada_Rylaa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qvd-N7-8QQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ODs-RU-Cfz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vkc-39-1Oh">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iFk-bB-Ydj">
+                                                <rect key="frame" x="16" y="5" width="382" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="ZzS-IC-fZu"/>
+                                                </constraints>
+                                                <segments>
+                                                    <segment title="Movies"/>
+                                                    <segment title="Music"/>
+                                                    <segment title="Book"/>
+                                                    <segment title="Podcast"/>
+                                                </segments>
+                                            </segmentedControl>
+                                        </subviews>
+                                        <color key="backgroundColor" name="primary"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="iFk-bB-Ydj" secondAttribute="trailing" constant="16" id="9IJ-f5-YxZ"/>
+                                            <constraint firstItem="iFk-bB-Ydj" firstAttribute="leading" secondItem="vkc-39-1Oh" secondAttribute="leading" constant="16" id="KsP-Tu-0U2"/>
+                                            <constraint firstItem="iFk-bB-Ydj" firstAttribute="centerY" secondItem="vkc-39-1Oh" secondAttribute="centerY" id="klc-Rq-qx5"/>
+                                            <constraint firstAttribute="height" constant="40" id="wuh-0l-dTm"/>
+                                        </constraints>
+                                    </view>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tS8-49-UmI">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                                        <color key="backgroundColor" name="primary"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dtd-15-VuS">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="50" height="50"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="footer" id="OLr-zH-OFu">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionReusableView>
+                                    </collectionView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TKr-kS-maY"/>
+                        <color key="backgroundColor" name="primary"/>
+                        <constraints>
+                            <constraint firstItem="ODs-RU-Cfz" firstAttribute="leading" secondItem="TKr-kS-maY" secondAttribute="leading" id="CaA-tf-CR5"/>
+                            <constraint firstItem="ODs-RU-Cfz" firstAttribute="top" secondItem="TKr-kS-maY" secondAttribute="top" id="CrY-5s-IBX"/>
+                            <constraint firstItem="ODs-RU-Cfz" firstAttribute="trailing" secondItem="TKr-kS-maY" secondAttribute="trailing" id="PT8-sb-iMe"/>
+                            <constraint firstAttribute="bottom" secondItem="ODs-RU-Cfz" secondAttribute="bottom" id="zmo-gP-1KY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="tS8-49-UmI" id="9lP-qx-zei"/>
+                        <outlet property="segmentedContainer" destination="vkc-39-1Oh" id="irc-Bo-8fL"/>
+                        <outlet property="segmentedControl" destination="iFk-bB-Ydj" id="MJh-gE-yHq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0DR-Bg-C5o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-168.11594202898553" y="-11.383928571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="primary">
+            <color red="0.0040000001899898052" green="0.0080000003799796104" blue="0.012000000104308128" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

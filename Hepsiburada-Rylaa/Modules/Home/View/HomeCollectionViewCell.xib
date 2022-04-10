@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="azK-el-qRi" customClass="HomeCollectionViewCell" customModule="Hepsiburada_Rylaa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="429"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tuO-oT-2wL">
+                <rect key="frame" x="0.0" y="0.0" width="412" height="429"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fUL-SH-bnv">
+                        <rect key="frame" x="0.0" y="0.0" width="412" height="429"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KL5-uX-p7t">
+                                <rect key="frame" x="0.0" y="0.0" width="412" height="392"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="85T-KO-bJ1">
+                                <rect key="frame" x="0.0" y="400" width="412" height="29"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOp-Ce-8KW">
+                                        <rect key="frame" x="0.0" y="0.0" width="412" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Cpo-iP-xjh">
+                                        <rect key="frame" x="0.0" y="14.5" width="412" height="14.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eld-KM-6pL">
+                                                <rect key="frame" x="0.0" y="0.0" width="206" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70P-I3-Xsz">
+                                                <rect key="frame" x="206" y="0.0" width="206" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" systemColor="systemPinkColor"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZa-TG-ILY">
+                        <rect key="frame" x="0.0" y="0.0" width="412" height="429"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="  "/>
+                        <connections>
+                            <action selector="cellClicked:" destination="azK-el-qRi" eventType="touchUpInside" id="HzE-3g-VTe"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="fUL-SH-bnv" firstAttribute="top" secondItem="tuO-oT-2wL" secondAttribute="top" id="0oN-zX-DBO"/>
+                    <constraint firstAttribute="trailing" secondItem="fUL-SH-bnv" secondAttribute="trailing" id="A5N-fm-RPx"/>
+                    <constraint firstAttribute="bottom" secondItem="lZa-TG-ILY" secondAttribute="bottom" id="HxT-E8-mMg"/>
+                    <constraint firstItem="lZa-TG-ILY" firstAttribute="leading" secondItem="tuO-oT-2wL" secondAttribute="leading" id="IU7-5D-4Ce"/>
+                    <constraint firstAttribute="bottom" secondItem="fUL-SH-bnv" secondAttribute="bottom" id="xl4-7R-z66"/>
+                    <constraint firstAttribute="trailing" secondItem="lZa-TG-ILY" secondAttribute="trailing" id="xlM-nk-HBh"/>
+                    <constraint firstItem="lZa-TG-ILY" firstAttribute="top" secondItem="tuO-oT-2wL" secondAttribute="top" id="yvs-Cu-PZ6"/>
+                    <constraint firstItem="fUL-SH-bnv" firstAttribute="leading" secondItem="tuO-oT-2wL" secondAttribute="leading" id="zA0-lB-jbl"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="412" height="429"/>
+            <connections>
+                <outlet property="amount" destination="70P-I3-Xsz" id="Vgq-RF-KXA"/>
+                <outlet property="imageView" destination="KL5-uX-p7t" id="8Gb-HX-teN"/>
+                <outlet property="subTitle" destination="eld-KM-6pL" id="0Nv-ns-47i"/>
+                <outlet property="title" destination="ZOp-Ce-8KW" id="84g-gZ-vra"/>
+            </connections>
+            <point key="canvasLocation" x="394.20289855072468" y="173.10267857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
